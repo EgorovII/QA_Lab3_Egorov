@@ -1,0 +1,36 @@
+\hypertarget{_sotrudnic_8cs_source}{}\doxysection{Sotrudnic.\+cs}
+\mbox{\hyperlink{_sotrudnic_8cs}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Diagnostics.Metrics;}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00003}00003\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_instruments___test}{Instruments\_Test}}\ \{}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00007}\mbox{\hyperlink{class_instruments___test_1_1_sotrudnic}{00007}}\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_instruments___test_1_1_sotrudnic}{Sotrudnic}}}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00008}00008\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00012}\mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_a2d4b94f017dcdca322d7935dc99c9e6d}{00012}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_a2d4b94f017dcdca322d7935dc99c9e6d}{\_name}};}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00016}\mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_a28536f381469f16e631f9ff09ace46c1}{00016}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_a28536f381469f16e631f9ff09ace46c1}{\_surname}};}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00020}\mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_aef18ac88e4f3ccaa10497c8b36ac6b64}{00020}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ DateTime\ \mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_aef18ac88e4f3ccaa10497c8b36ac6b64}{\_birthdate}};}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00024}\mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_ab93bd12a32e62a1e9c717439609013c1}{00024}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ List<System.Diagnostics.Metrics.Instrument>\ \mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_ab93bd12a32e62a1e9c717439609013c1}{\_instruments}};}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00032}\mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_ae844b7440511187aa6acfa259db7fcd1}{00032}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_ae844b7440511187aa6acfa259db7fcd1}{Sotrudnic}}(\textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{string}\ surname,\ DateTime\ birthdate,\ List<System.Diagnostics.Metrics.Instrument>\ instruments)}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_a2d4b94f017dcdca322d7935dc99c9e6d}{\_name}}\ =\ name;}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_a28536f381469f16e631f9ff09ace46c1}{\_surname}}\ =\ surname;}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_aef18ac88e4f3ccaa10497c8b36ac6b64}{\_birthdate}}\ =\ birthdate;}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_ab93bd12a32e62a1e9c717439609013c1}{\_instruments}}\ =\ instruments;}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00042}\mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_a9cdb3d2ba9de438769944c24010bd801}{00042}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_a9cdb3d2ba9de438769944c24010bd801}{Display}}()}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}Name:\{\_name\}\ \{\_surname\}\ \ Age:\{GetAge()\}"{}});}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\textcolor{stringliteral}{"{}Instruments:"{}});}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (System.Diagnostics.Metrics.Instrument\ instrument\ in\ \mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_ab93bd12a32e62a1e9c717439609013c1}{\_instruments}})}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}\{instrument.Name\}"{}});}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00056}\mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_a757a1cf44e609d8935921864fd8b2b4a}{00056}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_a757a1cf44e609d8935921864fd8b2b4a}{GetAge}}()}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ DateTime.Now.Subtract(\mbox{\hyperlink{class_instruments___test_1_1_sotrudnic_aef18ac88e4f3ccaa10497c8b36ac6b64}{\_birthdate}}).Days\ /\ 365;}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00060}00060\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sotrudnic_8cs_source_l00061}00061\ \}}
+
+\end{DoxyCode}
